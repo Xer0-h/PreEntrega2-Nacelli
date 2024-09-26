@@ -1,0 +1,188 @@
+*{
+   margin: 0; 
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: Verdana;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #550e0c;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #cecfc3;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #cecfc3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3b0b0c;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 60vh !important;
+    background: url(Img/redconcert.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cecfc3;
+}
+
+p { 
+margin-bottom: 40px;
+font-size: 10px;
+color: #cecfc3;
+padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #3c344b;
+    color: #cecfc3;
+    text-decoration: none;
+    background: #3c344b;
+}
+
+.btn:hover {
+    border: 2px solid #3f1528;
+    background: #3f1528;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0px 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: #240001;
+}
+
+.box-container {    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #3b0406;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: none;
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #cecfc3;
+    background: #3c344b;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #3c344b;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: #240001;
+}
+
+.gallery {
+    background: url(Img/concierto7.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background-color: #240001;
+    padding-top: 0;
+}
+
+@media (max-width: 768px) {
+    
+.title {
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.sau {
+    height: 120vh;
+}
+
+.navbar {
+    display: none;
+}
+
+}
