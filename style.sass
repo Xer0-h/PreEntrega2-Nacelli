@@ -141,6 +141,7 @@ p {
   @include flex-center;
   flex-wrap: wrap;
   text-align: center;
+  }
 
   .box {
     height: 11rem;
@@ -150,6 +151,7 @@ p {
     border-radius: 1rem;
     box-shadow: none;
     margin: 2rem;
+    }
 
     i {
       height: 3rem;
@@ -160,4 +162,60 @@ p {
       color: $secondary-color;
       background: $button-color;
       font-size: 2rem;
-      margin
+      margin 
+      }
+
+      // Media queries 
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+
+    p {
+        padding: 0 20px;
+    }
+
+    .btn-home {
+        flex-direction: column;
+    }
+
+    .content {
+        height: auto;
+    }
+
+    .box-container .box {
+        height: 8rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .box-container .box {
+        margin: 1rem 0;
+        width: 90%;
+    }
+}
