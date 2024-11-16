@@ -140,15 +140,6 @@ body {
     grid-area: footer;
 }
 
-.footer p a {
-    color: #cecfc3;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    box-shadow: 0 4px 8px rgba(154, 141, 141, 0.3);
-}
-
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;

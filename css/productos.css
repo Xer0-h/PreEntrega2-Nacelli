@@ -7,11 +7,11 @@
  }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: Verdana;
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    background-color: whitesmoke;
+    background-color: #550e0c;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -29,52 +29,43 @@ body {
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr;
     height: 100vh;
-    background-color: whitesmoke;
-    font-family: 'Playfair Display', serif;
+    background-color: #550e0c;
+    font-family: 'Playfair Display', Verdana;
 }
 
 .header {
-    background-image: url(../img/REVISTAS.jpg);
     text-align: center;
     padding: 1em;
     border: 2px solid gray;
 }
 
-.header img {
-    max-width: 100%;
-    height: auto;
-    animation: slideIn 1s ease-in-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.nav {
+.navbar {
     display: flex;
-    justify-content: space-around;
-    padding: 1em;
-    border: 2px solid gray;
-    border-top: none;
+    margin-right: 10px;
 }
 
-.nav a {
-    color: black;
-    font-size: 25px;
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
     text-decoration: none;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    color: #cecfc3;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
-.nav a:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: scale(1.1);
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #cecfc3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3b0b0c;
 }
 
 h1 {
@@ -107,7 +98,7 @@ h1 {
 }
 
 .custom-img {
-    width: 100%;
+    width: 95%;
     height: auto;
 }
 
@@ -128,19 +119,10 @@ h1 {
 }
 
 .footer {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #3f1528;
+    color: #cecfc3;
     text-align: center;
     padding: 1em;
-}
-
-.footer p a {
-    color: black;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    box-shadow: 0 4px 8px rgba(154, 141, 141, 0.3);
 }
 
 @media (max-width: 768px) {
