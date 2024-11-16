@@ -1,0 +1,163 @@
+// Variables
+$primary-color: #550e0c;
+$secondary-color: #cecfc3;
+$hover-color: #3b0b0c;
+$background-color: #240001;
+$button-color: #3c344b;
+$button-hover-color: #3f1528;
+
+// Base styles
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-container($width) {
+  width: 100%;
+  @media(min-width: 768px) {
+    width: $width;
+  }
+}
+
+// Head styles
+.head {
+  @include flex-center;
+  justify-content: space-between;
+  height: 63px;
+  background: $primary-color;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  margin-right: 10px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px 20px;
+  color: $secondary-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+// Header styles
+header {
+  @include flex-center;
+}
+
+.header {
+  height: 60vh !important;
+  background: url(Img/redconcert.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 15px;
+  color: $secondary-color;
+  padding: 0 100px;
+}
+
+// Button styles
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid $button-color;
+  color: $secondary-color;
+  text-decoration: none;
+  background: $button-color;
+
+  &:hover {
+    border: 2px solid $button-hover-color;
+    background: $button-hover-color;
+  }
+}
+
+.btn-home {
+  @include flex-center;
+}
+
+.btn-home a {
+  margin: 0px 10px;
+}
+
+// Content styles
+.content {
+  height: 50vh;
+  @include flex-center;
+  flex-direction: column;
+}
+
+// Section styles
+.sau {
+  padding: 30px;
+  background: $background-color;
+}
+
+.box-container {
+  @include flex-center;
+  flex-wrap: wrap;
+  text-align: center;
+
+  .box {
+    height: 11rem;
+    width: 17rem;
+    background: #3b0406;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: none;
+    margin: 2rem;
+
+    i {
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      border-radius: 50%;
+      color: $secondary-color;
+      background: $button-color;
+      font-size: 2rem;
+      margin
