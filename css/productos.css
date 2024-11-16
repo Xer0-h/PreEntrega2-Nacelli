@@ -1,0 +1,167 @@
+*{
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+ }
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: whitesmoke;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+    background-image: url(../img/REVISTAS.jpg);
+    text-align: center;
+    padding: 1em;
+    border: 2px solid gray;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border: 2px solid gray;
+    border-top: none;
+}
+
+.nav a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.container {
+    padding: 1em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.col-md-4 {
+    flex: 1;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.col-md-4 h2 {
+    text-align: center;
+}
+
+.col-md-4 p {
+    text-align: center;
+}
+
+.custom-img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-custom {
+    background-color: #5d585b;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #4a4547;
+}
+
+.footer {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer p a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    box-shadow: 0 4px 8px rgba(154, 141, 141, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        font-size: 19px;
+    }
+
+    .main h1 {
+        font-size: 25px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .content img, .content p, .content figcaption {
+        text-align: center;
+    }
+}
