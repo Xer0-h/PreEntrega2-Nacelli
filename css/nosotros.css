@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+body {
+    text-align: center;
+    font-family: Verdana;
+}
+
+.head {
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #550e0c;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #cecfc3;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #cecfc3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3b0b0c;
+}
+
+header {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 60vh !important;
+    background: url(Img/concierto7.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cecfc3;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #cecfc3;
+    padding: 0 100px;
+}
+
+.img src {
+    width: 90%;
+    height: auto;
+}
+
+.footer {
+    background-color: #3f1528;
+    color: #cecfc3;
+    text-align: center;
+    padding: 1em;
+    grid-area: footer;
+}

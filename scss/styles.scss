@@ -1,7 +1,7 @@
 $font-family: 'Playfair Display', Verdana;
 $font-size-base: 16px;
 $line-height-base: 1.5;
-$background-color: whitesmoke;
+$background-color: #cecfc3;
 $border-color: gray;
 $transition-duration: 0.3s;
 
@@ -48,7 +48,7 @@ body {
   grid-area: nav;
 
   a {
-    color: black;
+    color: #3c344b;
     font-size: 25px;
     text-decoration: none;
     transition: box-shadow $transition-duration ease;
@@ -110,7 +110,7 @@ body {
 
 .footer {
   background-color: $background-color;
-  color: black;
+  color: #3c344b;
   text-align: center;
   padding: 1em;
   grid-area: footer;
