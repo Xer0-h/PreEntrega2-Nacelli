@@ -73,7 +73,7 @@ header {
 
 p { 
 margin-bottom: 40px;
-font-size: 10px;
+font-size: 15px;
 color: #cecfc3;
 padding: 0 100px;
 }
@@ -170,19 +170,10 @@ padding: 0 100px;
     padding-top: 0;
 }
 
-@media (max-width: 768px) {
-    
-.title {
-    margin-bottom: 0;
-    font-size: 40px;
-}
-
-.sau {
-    height: 120vh;
-}
-
-.navbar {
-    display: none;
-}
-
+.footer {
+    background-color: #3f1528;
+    color: #cecfc3;
+    text-align: center;
+    padding: 1em;
+    grid-area: footer;
 }
